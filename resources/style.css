@@ -1,14 +1,9 @@
-body {
-
-    margin: 0 auto;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 1px solid red; */
+
 }
 
 /* dark-mode test */
@@ -46,6 +41,7 @@ header {
     margin: 0 auto;
     color: white;
     z-index: 1000;
+    flex-wrap: wrap;
 }
 
 .logo-link {
@@ -87,9 +83,8 @@ header {
 }
 
 .desktop_nav ul li:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(52, 36, 36);
     border-radius: 10px;
-
 }
 
 .nav_links a {
@@ -132,6 +127,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     height: 50rem;
+    flex-wrap: wrap;
 
 }
 
@@ -163,7 +159,7 @@ header {
 
 .my_portrait {
     border-radius: 50%;
-    height: 22rem;
+    height: 23rem;
 }
 
 /* INDEX INTRO */
@@ -172,14 +168,12 @@ header {
     display: flex;
     height: 40rem;
     justify-content: center;
-    align-items: center;
-
+    flex-wrap: wrap;
 }
 
 .index_intro_text {
     width: 50%;
     font-size: 1.5rem;
-
 }
 
 .intro_photo {
@@ -187,18 +181,84 @@ header {
     border-radius: 50px;
 }
 
+.index_intro_nav {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.index_intro_nav a {
+    background-color: rgba(102, 76, 76, 0.947);
+    color: white;
+    padding: 0.3rem;
+    border-radius: 10px;
+    transition: font-size 0.3s ease;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.index_intro_nav a:hover {
+    font-size: 1.6rem;
+    background-color: rgb(52, 36, 36);
+}
 
 /* Footer */
 
 footer {
+    position: absolute;
     display: flex;
     flex-direction: column;
     width: 100%;
     color: white;
     padding: 1rem 0;
+    flex-wrap: wrap;
 }
 
 footer h3,
 footer h5 {
     margin: 5px auto;
+}
+
+@media (max-width: 413px) {
+
+    * {
+        overflow-x: hidden;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .desktop_nav,
+    .nav_links {
+        display: none;
+    }
+
+    .index_banner {
+        margin-top: 5rem;
+        text-align: center;
+
+    }
+
+    .index_intro_text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .index_intro_nav {
+        padding-bottom: 10rem;
+
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .index_intro_nav a {
+        margin-bottom: 0.5rem;
+    }
+
+    .intro_photo {
+        display: none;
+    }
 }
