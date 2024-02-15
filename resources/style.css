@@ -1,75 +1,67 @@
 body {
+
     margin: 0 auto;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
 
 /* dark-mode test */
 
 .dark_mode {
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(21, 21, 21);
     color: white;
 }
 
 .dark_mode .desktop_nav li {
-    background-color: rgba(204, 204, 204, 0.182);
+    background-color: rgba(134, 134, 134, 0.182);
     border-radius: 10px;
 }
-
-.dark_mode .bnner_nav a {
-    background-color: rgba(204, 204, 204, 0.751);
-    border-radius: 10px;
-}
-
 
 .dark_mode .dark_mode_button {
     filter: invert(100%);
 }
 
-.dark_mode_button {
-    margin-right: 38%;
-    margin-top: 7px;
-    height: 50px;
-    background: transparent;
-    border: 0;
-}
-
-.dark_mode_button img {
-    height: 40px;
-    width: 40px;
-}
-
-.dark_mode_button img:hover {
-    cursor: pointer;
-}
 
 /* HEADER AND NAV */
 
+header,
+footer {
+    background-color: rgba(102, 76, 76, 0.947);
+}
+
 header {
     display: flex;
-    position: relative;
+    position: fixed;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    height: 5rem;
     margin: 0 auto;
-    background-color: rgb(32, 32, 63);
     color: white;
-
+    z-index: 1000;
 }
 
 .logo-link {
     margin-left: 2.1rem;
     text-decoration: none;
     color: white;
+    transition: font-size 0.3s ease;
+}
 
+.logo-link:hover {
+    font-size: 1.7rem;
 }
 
 
 .desktop_nav {
     list-style-type: none;
-
 }
 
 .desktop_nav ul {
@@ -79,7 +71,9 @@ header {
 
 .desktop_nav ul li {
     display: inline;
-    padding: 1rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
 }
 
 .desktop_nav ul li a:link {
@@ -95,6 +89,37 @@ header {
 .desktop_nav ul li:hover {
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
+
+}
+
+.nav_links a {
+    color: #0077B5;
+    margin-top: 2.5rem;
+    transition: font-size 0.3s ease;
+    padding-right: 1rem;
+    text-decoration: none;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.nav_links a:hover {
+    font-size: 1.2rem;
+}
+
+.dark_mode_button {
+    background: transparent;
+    border: 0;
+
+}
+
+.dark_mode_button img {
+    height: 40px;
+    width: 40px;
+}
+
+.dark_mode_button img:hover {
+    cursor: pointer;
 }
 
 
@@ -102,14 +127,11 @@ header {
 
 .index_banner {
     display: flex;
-    position: relative;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-items: center;
-
+    justify-content: space-evenly;
     align-items: center;
-    height: 82.3vh;
-    width: 80%;
-    margin: 0 auto;
+    height: 50rem;
 
 }
 
@@ -117,29 +139,63 @@ header {
     font-size: 2.5rem;
 }
 
-.banner_text p {
+.banner_p {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.linkedin_github_links a {
+    color: #0077B5;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    transition: font-size 0.3s ease;
+    padding-right: 1rem;
+    text-decoration: none;
+}
+
+.linkedin_github_links a:hover {
+    font-size: 1.6rem;
+}
+
+.fa_linkedin {
+    background-color: #0077B5;
 }
 
 .my_portrait {
     border-radius: 50%;
-    height: 30rem;
+    height: 22rem;
+}
+
+/* INDEX INTRO */
+
+.index_intro {
+    display: flex;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
 
 }
+
+.index_intro_text {
+    width: 50%;
+    font-size: 1.5rem;
+
+}
+
+.intro_photo {
+    height: 60%;
+    border-radius: 50px;
+}
+
 
 /* Footer */
 
 footer {
-    bottom: 0;
     display: flex;
     flex-direction: column;
-    position: relative;
-    margin: 0 auto;
     width: 100%;
-    background-color: rgb(32, 32, 63);
-    border-bottom: 5px solid rgb(32, 32, 63);
     color: white;
-    padding-top: 0.2rem;
+    padding: 1rem 0;
 }
 
 footer h3,
