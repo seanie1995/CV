@@ -43,6 +43,7 @@ body {
 .dark_mode_button img:hover {
     cursor: pointer;
 }
+
 /* HEADER AND NAV */
 
 header {
@@ -62,7 +63,7 @@ header {
     margin-left: 2.1rem;
     text-decoration: none;
     color: white;
-    
+
 }
 
 
@@ -154,12 +155,12 @@ header {
 .my_portrait {
     display: flex;
     flex-direction: column;
-   
-    border: 5px solid   rgb(0, 0, 0);
+
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 200px;
     height: 30rem;
     max-height: 30rem;
-    
+
 }
 
 /* Footer */
