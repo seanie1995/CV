@@ -229,7 +229,7 @@ footer h5 {
 
 /* PHONE MODE */
 
-@media (max-width: 413px) {
+@media (max-width: 415px) {
 
     * {
         overflow-x: hidden;
