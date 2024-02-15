@@ -25,6 +25,21 @@
 
 /* HEADER AND NAV */
 
+#modal_nav {
+    display: none;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 header,
 footer {
     background-color: rgba(102, 76, 76, 0.947);
@@ -187,6 +202,10 @@ header {
 
 }
 
+.chas_link {
+    text-decoration: none;
+}
+
 .index_intro_nav a {
     background-color: rgba(102, 76, 76, 0.947);
     color: white;
@@ -245,13 +264,13 @@ footer h5 {
         width: 100%;
     }
 
+
+
     .index_intro_nav {
         padding-bottom: 10rem;
 
         justify-content: center;
         align-items: center;
-
-
     }
 
     .index_intro_nav a {
