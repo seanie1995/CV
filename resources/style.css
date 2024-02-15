@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
     /* border: 1px solid red; */
 
 }
@@ -24,6 +25,10 @@
 
 
 /* HEADER AND NAV */
+
+#nav_toggle {
+    display: none;
+}
 
 .modal_menu {
     display: none;
@@ -288,10 +293,27 @@ footer h5 {
         right: 0;
         top: 0;
         bottom: 100%;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.5);
+        /* text-align: center; */
+        background-color: rgba(0, 0, 0, 0.758);
         overflow: hidden;
         transition: all .5s;
+
+    }
+
+    .desktop_nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    .desktop_nav li {
+        margin-bottom: 2rem;
+
     }
 
     #nav_toggle:checked~.desktop_nav {
