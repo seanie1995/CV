@@ -15,7 +15,7 @@
 }
 
 .dark_mode .desktop_nav li {
-    background-color: rgba(134, 134, 134, 0.182);
+    /* background-color: rgba(134, 134, 134, 0.182); */
     border-radius: 10px;
 }
 
@@ -70,8 +70,12 @@ header {
 }
 
 .desktop_nav ul {
-    display: block;
-    margin-right: 5rem;
+    /* display: list; */
+    flex-direction: row;
+    /* display: block; */
+    margin: 0 2.5rem;
+    padding: 0;
+
 }
 
 .desktop_nav ul li {
@@ -313,6 +317,8 @@ footer h5 {
 
     .desktop_nav li {
         margin-bottom: 2rem;
+        background-color: rgb(61, 61, 61);
+        ;
 
     }
 
