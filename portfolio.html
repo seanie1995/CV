@@ -16,7 +16,7 @@
     <main>
         <header>
             <h2><a class="logo-link" href="index.html">Sean Schelin</a></h2>
-            <!-- <input type="checkbox" id="nav_toggle"> -->
+            <input type="checkbox" id="nav_toggle">
             <nav class="desktop_nav">
                 <ul>
                     <li><a href="index.html">Main Page</a></li>
@@ -46,50 +46,147 @@
                 <input type="checkbox" id="bakery_toggle">
                 <input type="checkbox" id="recipe_toggle">
 
-                <div class="music_api">
+                <div class="music_api" class="portfolio_card">
                     <div id="music_modal">
                         <p>
                             The biggest program I've had the pleasure of working on. A group project wherein we create
                             our own API with it's own database that we build from the ground up.
                         </p>
+                        <a class="card_link" href="#music_section">Music API</a>
                     </div>
                     <label class="music_checkbox" for="music_toggle">
                         <h2>Music API</h2>
                     </label>
                 </div>
-                <div class="bank_api">
+                <div class="bank_api" class="portfolio_card">
                     <div id="bank_modal">
                         <p>
                             The first big group project during my time at Chas Academy. It was my first encounter with
                             Databases, SQL and more!
                         </p>
+                        <a class="card_link" href="#bank_section">ATM Program</a>
                     </div>
                     <label class="bank_checkbox" for="bank_toggle">
                         <h2>ATM Program</h2>
                     </label>
                 </div>
-                <div class="bakery_site">
+                <div class="bakery_site" class="portfolio_card">
                     <div id="bakery_modal">
                         <p>
                             My very first "big" project in Web Development and also my very first website that I
                             created. Creating this site
                             made me realize that I wanted to take this path to working in IT.
                         </p>
+                        <a class="card_link" href="#bakery_section">Bakery Website</a>
                     </div>
                     <label class="bakery_checkbox" for="bakery_toggle">
                         <h2>Bakery Website</h2>
                     </label>
                 </div>
-                <div class="recipe_api">
+                <div class="recipe_api" class="portfolio_card">
                     <div id="recipe_modal">
                         <p>
                             A very small API I created for practice.
                         </p>
+                        <a class="card_link" href="#recipe_section">Recipe API</a>
                     </div>
                     <label class="recipe_checkbox" for="recipe_toggle">
                         <h2>Recipe API</h2>
                     </label>
                 </div>
+            </div>
+        </section>
+
+        <section class="portfolio_info" id="music_section">
+            <div class="portfolio_info_content">
+                <img src="./resources/portfolio/music-api.png">
+                <div class="portfolio_info_text">
+                    <h2>Music API</h2>
+                    <p class="p_1">The goal for this group project was to create an API that made use of a
+                        database that we had
+                        designed and created by
+                        ourselves and also incorporate the functionality of an external API.
+                    </p>
+                    <p class="p_2">This API stores information
+                        on artist names, genre names
+                        and song names. Each user can "like" and store a selection of different artists, genres and
+                        songs and each of these datatypes
+                        also had connections with one another. <br><br>A simple console program was created to navigate
+                        through
+                        the data found in the API.
+                    </p>
+                    <div class="linkedin_github_links">
+                        <a href="https://github.com/seanie1995/SpelarDuInAPI" target="_blank">See on GitHub<i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio_info" id="bank_section">
+            <div class="portfolio_info_content">
+                <div class="portfolio_info_text">
+                    <h2>ATM Console Program</h2>
+                    <p class="p_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates expedita
+                        sint nobis odio beatae fugit minima quaerat tenetur laudantium ad amet ut autem animi, itaque
+                        eius labore quasi? Maiores!
+                    </p>
+                    <p class="p_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto. Fugit totam
+                        libero cupiditate quis saepe architecto veniam, voluptatem vero suscipit, nostrum atque nobis.
+                        Fuga tempore ipsa corporis molestiae necessitatibus.
+                        also had connections with one another.
+                    </p>
+                    <div class="linkedin_github_links">
+                        <a href="https://github.com/seanie1995/ATM-Group-Project" target="_blank">See on GitHub<i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <img src="./resources/portfolio/bank.png">
+            </div>
+        </section>
+
+        <section class="portfolio_info" id="bakery_section">
+            <div class="portfolio_info_content">
+                <img src="./resources/portfolio/bakery.png">
+                <div class="portfolio_info_text">
+                    <h2>Bakery Website</h2>
+                    <p class="p_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates expedita
+                        sint nobis odio beatae fugit minima quaerat tenetur laudantium ad amet ut autem animi, itaque
+                        eius labore quasi? Maiores!
+                    </p>
+                    <p class="p_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto. Fugit totam
+                        libero cupiditate quis saepe architecto veniam, voluptatem vero suscipit, nostrum atque nobis.
+                        Fuga tempore ipsa corporis molestiae necessitatibus.
+                        also had connections with one another.
+                    </p>
+                    <div class="linkedin_github_links">
+                        <a href="https://github.com/seanie1995/konditori" target="_blank">See on GitHub<i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="portfolio_info" id="recipe_section">
+            <div class="portfolio_info_content">
+                <div class="portfolio_info_text">
+                    <h2>Simple Recipe API</h2>
+                    <p class="p_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates expedita
+                        sint nobis odio beatae fugit minima quaerat tenetur laudantium ad amet ut autem animi, itaque
+                        eius labore quasi? Maiores!
+                    </p>
+                    <p class="p_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto. Fugit totam
+                        libero cupiditate quis saepe architecto veniam, voluptatem vero suscipit, nostrum atque nobis.
+                        Fuga tempore ipsa corporis molestiae necessitatibus.
+                        also had connections with one another.
+                    </p>
+                    <div class="linkedin_github_links">
+                        <a href="https://github.com/seanie1995/MealsDB" target="_blank">See on GitHub<i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <img src="./resources/portfolio/recipes.png">
             </div>
         </section>
 

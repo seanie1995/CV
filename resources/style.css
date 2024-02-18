@@ -1,11 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transition: background-color 0.5s ease, color 0.5s ease;
     /* border: 1px solid red; */
-
 }
+
+
 
 /* dark-mode test */
 
@@ -42,6 +47,8 @@
 header,
 footer {
     background-color: rgba(102, 76, 76, 0.947);
+    padding: 1rem;
+
 }
 
 header {
@@ -117,7 +124,7 @@ header {
 }
 
 .nav_links a:hover {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .dark_mode_button {
@@ -143,7 +150,7 @@ header {
     justify-items: center;
     justify-content: space-evenly;
     align-items: center;
-    height: 50rem;
+    height: 55rem;
     flex-wrap: wrap;
 
 }
@@ -185,8 +192,10 @@ header {
     display: flex;
     height: 40rem;
     justify-content: center;
-
+    /* align-items: center; */
     flex-wrap: wrap;
+    /*  border: 1px solid red; */
+
 }
 
 .index_intro_text {
@@ -235,8 +244,10 @@ header {
 
 
 
+
 .modal_content p {
     display: none;
+
 }
 
 .portfolio_content {
@@ -245,23 +256,27 @@ header {
     justify-content: center;
     align-items: center;
     /* flex-direction: column; */
-    height: 50rem;
-    border: 1px solid black;
+    height: 55rem;
 
 }
 
 .portfolio_content h1 {
     padding: 2.5rem;
     font-size: 50px;
+    margin-top: 3rem;
 }
+
+
 
 .card_container {
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
+    padding-bottom: 4.5rem;
+
 
 }
 
@@ -272,9 +287,10 @@ header {
     justify-content: center;
     width: 20rem;
     height: 30rem;
-    border-radius: 15px;
+    border-radius: 11px;
 
 }
+
 
 .music_api {
     background-image: url("./portfolio/earphones.jpg");
@@ -308,8 +324,22 @@ header {
     width: 100%;
     justify-content: center;
     padding: 1rem 0;
-    border-radius: 15px;
-    transition: font-size 0.3 ease;
+    border-radius: 11px;
+    transition: background-color 0.3 ease;
+}
+
+.card_link {
+    margin-top: 1rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.567);
+    color: inherit;
+    border-radius: inherit;
+    transition: background-color 0.3 ease;
+}
+
+.card_link:hover {
+    background-color: black;
 }
 
 label {
@@ -320,7 +350,8 @@ label {
 
 label h2:hover {
     cursor: pointer;
-    font-size: 1.6rem;
+    background-color: rgba(134, 114, 114, 0.971);
+
 }
 
 /* Fade In */
@@ -377,9 +408,57 @@ label h2:hover {
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.758);
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 11px;
 
 }
+
+/* PORTFOLIO PROJECTS */
+/* MUSIC SECTION */
+.portfolio_info {
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.portfolio_info_content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.portfolio_info_text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 2.5rem;
+    flex-wrap: wrap;
+}
+
+.portfolio_info_text h2 {
+    margin-bottom: 16px;
+}
+
+.p_1 {
+    margin-bottom: 16px;
+}
+
+.p_2 {
+    margin-bottom: 16px;
+}
+
+.portfolio_info_content img {
+    width: 50%;
+}
+
+
 
 @keyframes fadeIn {
     from {
@@ -412,7 +491,7 @@ footer {
     flex-direction: column;
     width: 100%;
     color: white;
-    padding: 1rem 0;
+
     flex-wrap: wrap;
 
 }
@@ -513,4 +592,43 @@ footer h5 {
         padding-top: 6em;
         bottom: 0;
     }
+
+    /* PORTFOLIO  */
+
+    .portfolio_content {
+        /* justify-content: space-around; */
+        border: 1px solid red;
+
+    }
+
+    .music_api,
+    .bakery_site,
+    .bank_api,
+    .recipe_api {
+
+        margin-bottom: 1rem;
+    }
+
+    .portfolio_info {
+        /* border: 1px solid red; */
+        height: 35rem;
+    }
+
+    .portfolio_info_text {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio_info_content {
+        flex-direction: column;
+
+    }
+
+    .portfolio_info_content img {
+        display: none;
+        position: absolute;
+    }
+
+    .card_container div {}
 }
