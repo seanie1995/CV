@@ -535,6 +535,46 @@ label h2:hover {
     justify-content: center;
 }
 
+/* EDUCATION */
+
+.edu_content {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.edu_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.university {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border: 1px solid red;
+    flex-wrap: wrap;
+}
+
+.university li,
+.university h2 {
+    padding-bottom: 16px;
+}
+
+.dalarna {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* Footer */
 
 footer {
