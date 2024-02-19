@@ -13,31 +13,29 @@
 </head>
 
 <body>
+    <header>
+        <h2><a class="logo-link" href="index.html">Sean Schelin</a></h2>
+        <input type="checkbox" id="nav_toggle">
+        <nav class="desktop_nav">
+            <ul>
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="experience.html">CV</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">About Me</a></li>
+            </ul>
+        </nav>
+        <div class="nav_links">
+            <a href="https://www.linkedin.com/feed/" target="_blank">Linked<i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/seanie1995" target="_blank">GitHub<i class="fa-brands fa-github"></i></a>
+        </div>
+        <button class="dark_mode_button"><img onclick="darkMode()" src="./resources/index/Nav/dark-mode.png"></button>
+        <div class="modal_menu">
+            <label for="nav_toggle">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+    </header>
     <main>
-        <header>
-            <h2><a class="logo-link" href="index.html">Sean Schelin</a></h2>
-            <input type="checkbox" id="nav_toggle">
-            <nav class="desktop_nav">
-                <ul>
-                    <li><a href="index.html">Main Page</a></li>
-                    <li><a href="experience.html">CV</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="contact.html">About Me</a></li>
-                </ul>
-            </nav>
-            <div class="nav_links">
-                <a href="https://www.linkedin.com/feed/" target="_blank">Linked<i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/seanie1995" target="_blank">GitHub<i class="fa-brands fa-github"></i></a>
-            </div>
-            <button class="dark_mode_button"><img onclick="darkMode()"
-                    src="./resources/index/Nav/dark-mode.png"></button>
-            <div class="modal_menu">
-                <label for="nav_toggle">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-            </div>
-        </header>
-
         <section class="portfolio_content">
             <h1>Portfolio</h1>
             <div class="card_container">
@@ -95,102 +93,109 @@
                     </label>
                 </div>
             </div>
-        </section>
 
-        <section class="portfolio_info" id="music_section">
-            <div class="portfolio_info_content">
-                <img src="./resources/portfolio/music-api.png">
-                <div class="portfolio_info_text">
-                    <h2>Music API</h2>
-                    <p class="p_1">The goal for this group project was to create an API that made use of a
-                        database that we had
-                        designed and created by
-                        ourselves and also incorporate the functionality of an external API.
-                    </p>
-                    <p class="p_2">This API stores information
-                        on artist names, genre names
-                        and song names. Each user can "like" and store a selection of different artists, genres and
-                        songs and each of these datatypes
-                        also had connections with one another. <br><br>A simple console program was created to navigate
-                        through
-                        the data found in the API.
-                    </p>
-                    <div class="linkedin_github_links">
-                        <a href="https://github.com/seanie1995/SpelarDuInAPI" target="_blank">See on GitHub<i
-                                class="fa-brands fa-github"></i></a>
+            <section class="portfolio_info" id="music_section">
+                <div class="portfolio_info_content">
+                    <img src="./resources/portfolio/music-api.png">
+                    <div class="portfolio_info_text">
+                        <h2>Music API</h2>
+                        <p class="p_1">The goal for this group project was to create an API that made use of a
+                            database that we had
+                            designed and created by
+                            ourselves and also incorporate the functionality of an external API.
+                        </p>
+                        <p class="p_2">This API stores information
+                            on artist names, genre names
+                            and song names. Each user can "like" and store a selection of different artists, genres and
+                            songs and each of these datatypes
+                            also had connections with one another. <br><br>A simple console program was created to
+                            navigate
+                            through
+                            the data found in the API.
+                        </p>
+                        <div class="linkedin_github_links">
+                            <a href="https://github.com/seanie1995/SpelarDuInAPI" target="_blank">See on GitHub<i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="portfolio_info" id="bank_section">
-            <div class="portfolio_info_content">
-                <div class="portfolio_info_text">
-                    <h2>ATM Console Program</h2>
-                    <p class="p_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates expedita
-                        sint nobis odio beatae fugit minima quaerat tenetur laudantium ad amet ut autem animi, itaque
-                        eius labore quasi? Maiores!
-                    </p>
-                    <p class="p_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto. Fugit totam
-                        libero cupiditate quis saepe architecto veniam, voluptatem vero suscipit, nostrum atque nobis.
-                        Fuga tempore ipsa corporis molestiae necessitatibus.
-                        also had connections with one another.
-                    </p>
-                    <div class="linkedin_github_links">
-                        <a href="https://github.com/seanie1995/ATM-Group-Project" target="_blank">See on GitHub<i
-                                class="fa-brands fa-github"></i></a>
+            <section class="portfolio_info" id="bank_section">
+                <div class="portfolio_info_content">
+                    <div class="portfolio_info_text">
+                        <h2>ATM Console Program</h2>
+                        <p class="p_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates expedita
+                            sint nobis odio beatae fugit minima quaerat tenetur laudantium ad amet ut autem animi,
+                            itaque
+                            eius labore quasi? Maiores!
+                        </p>
+                        <p class="p_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto. Fugit totam
+                            libero cupiditate quis saepe architecto veniam, voluptatem vero suscipit, nostrum atque
+                            nobis.
+                            Fuga tempore ipsa corporis molestiae necessitatibus.
+                            also had connections with one another.
+                        </p>
+                        <div class="linkedin_github_links">
+                            <a href="https://github.com/seanie1995/ATM-Group-Project" target="_blank">See on GitHub<i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
+                    <img src="./resources/portfolio/bank.png">
                 </div>
-                <img src="./resources/portfolio/bank.png">
-            </div>
-        </section>
+            </section>
 
-        <section class="portfolio_info" id="bakery_section">
-            <div class="portfolio_info_content">
-                <img src="./resources/portfolio/bakery.png">
-                <div class="portfolio_info_text">
-                    <h2>Bakery Website</h2>
-                    <p class="p_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates expedita
-                        sint nobis odio beatae fugit minima quaerat tenetur laudantium ad amet ut autem animi, itaque
-                        eius labore quasi? Maiores!
-                    </p>
-                    <p class="p_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto. Fugit totam
-                        libero cupiditate quis saepe architecto veniam, voluptatem vero suscipit, nostrum atque nobis.
-                        Fuga tempore ipsa corporis molestiae necessitatibus.
-                        also had connections with one another.
-                    </p>
-                    <div class="linkedin_github_links">
-                        <a href="https://github.com/seanie1995/konditori" target="_blank">See on GitHub<i
-                                class="fa-brands fa-github"></i></a>
+            <section class="portfolio_info" id="bakery_section">
+                <div class="portfolio_info_content">
+                    <img src="./resources/portfolio/bakery.png">
+                    <div class="portfolio_info_text">
+                        <h2>Bakery Website</h2>
+                        <p class="p_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates expedita
+                            sint nobis odio beatae fugit minima quaerat tenetur laudantium ad amet ut autem animi,
+                            itaque
+                            eius labore quasi? Maiores!
+                        </p>
+                        <p class="p_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto. Fugit totam
+                            libero cupiditate quis saepe architecto veniam, voluptatem vero suscipit, nostrum atque
+                            nobis.
+                            Fuga tempore ipsa corporis molestiae necessitatibus.
+                            also had connections with one another.
+                        </p>
+                        <div class="linkedin_github_links">
+                            <a href="https://github.com/seanie1995/konditori" target="_blank">See on GitHub<i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
+
                 </div>
+            </section>
 
-            </div>
-        </section>
-
-        <section class="portfolio_info" id="recipe_section">
-            <div class="portfolio_info_content">
-                <div class="portfolio_info_text">
-                    <h2>Simple Recipe API</h2>
-                    <p class="p_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates expedita
-                        sint nobis odio beatae fugit minima quaerat tenetur laudantium ad amet ut autem animi, itaque
-                        eius labore quasi? Maiores!
-                    </p>
-                    <p class="p_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto. Fugit totam
-                        libero cupiditate quis saepe architecto veniam, voluptatem vero suscipit, nostrum atque nobis.
-                        Fuga tempore ipsa corporis molestiae necessitatibus.
-                        also had connections with one another.
-                    </p>
-                    <div class="linkedin_github_links">
-                        <a href="https://github.com/seanie1995/MealsDB" target="_blank">See on GitHub<i
-                                class="fa-brands fa-github"></i></a>
+            <section class="portfolio_info" id="recipe_section">
+                <div class="portfolio_info_content">
+                    <div class="portfolio_info_text">
+                        <h2>Simple Recipe API</h2>
+                        <p class="p_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates expedita
+                            sint nobis odio beatae fugit minima quaerat tenetur laudantium ad amet ut autem animi,
+                            itaque
+                            eius labore quasi? Maiores!
+                        </p>
+                        <p class="p_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto. Fugit totam
+                            libero cupiditate quis saepe architecto veniam, voluptatem vero suscipit, nostrum atque
+                            nobis.
+                            Fuga tempore ipsa corporis molestiae necessitatibus.
+                            also had connections with one another.
+                        </p>
+                        <div class="linkedin_github_links">
+                            <a href="https://github.com/seanie1995/MealsDB" target="_blank">See on GitHub<i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
+                    <img src="./resources/portfolio/recipes.png">
                 </div>
-                <img src="./resources/portfolio/recipes.png">
-            </div>
+            </section>
         </section>
 
-        <footer class="index_footer">
+        <footer class="portfolio_footer">
             <h3>Contact</h3>
             <h5>soundofsean8@gmail.com</h5>
             <h5>0707418173</h5>
