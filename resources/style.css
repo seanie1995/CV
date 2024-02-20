@@ -10,6 +10,12 @@ html {
     /* border: 1px solid red; */
 }
 
+#music {
+    display: none;
+    position: absolute;
+}
+
+
 
 /* dark-mode test */
 
