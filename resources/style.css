@@ -538,7 +538,7 @@ label h2:hover {
 /* EDUCATION */
 
 .edu_content {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -546,26 +546,37 @@ label h2:hover {
     align-items: center;
     width: 90%;
     margin: 0 auto;
-    border: 1px solid red;
+    padding-top: 9rem;
+    padding-bottom: 5rem;
 }
+
 
 .edu_list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.university {
+.university_container,
+.chas_container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    border: 1px solid red;
+    justify-content: space-evenly;
+    width: 100%;
     flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.university,
+.chas {
+    width: 50%;
 }
 
 .university li,
-.university h2 {
+.university h2,
+.chas li,
+.chas h2 {
     padding-bottom: 16px;
 }
 
@@ -573,6 +584,15 @@ label h2:hover {
     width: 40%;
     display: flex;
     flex-wrap: wrap;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.chas_logo {
+    width: 23%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 16px;
 }
 
 /* Footer */
@@ -610,17 +630,19 @@ footer h5 {
     }
 
     .index_banner {
-        margin-top: 5rem;
+        padding-top: 5rem;
         text-align: center;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .index_intro_text {
         text-align: center;
-        width: 100%;
+        width: 90%;
+        overflow: hidden;
     }
 
     .index_intro_nav {
-        padding-bottom: 10rem;
 
         justify-content: center;
         align-items: center;
@@ -697,6 +719,7 @@ footer h5 {
 
     .portfolio_info {
         /* border: 1px solid red; */
+
         height: 35rem;
     }
 
@@ -716,5 +739,33 @@ footer h5 {
         position: absolute;
     }
 
-    .card_container div {}
+
+    /* EXPERIENCE/CV */
+
+    .cv_content {
+        padding-top: 7rem;
+    }
+
+    /* EDUCATION */
+
+
+
+    .edu_content,
+    .university {
+        width: 100%;
+
+    }
+
+
+    .chas_container {
+        flex-direction: column;
+    }
+
+    .university_container {
+        flex-direction: column-reverse;
+    }
+
+    .edu_content ul {
+        padding: 2.5rem;
+    }
 }
