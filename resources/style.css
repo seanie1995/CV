@@ -194,20 +194,19 @@ header {
 /* INDEX INTRO */
 
 .index_intro {
-
     display: flex;
     height: 40rem;
     justify-content: center;
-    align-items: center;
+    /*  align-items: center; */
     flex-wrap: wrap;
     /*  border: 1px solid red; */
     flex-direction: row;
 }
 
 .index_intro_text {
-    width: 50%;
+    width: 90%;
     font-size: 1.5rem;
-
+    text-align: center;
 }
 
 .intro_photo {
@@ -218,6 +217,7 @@ header {
 .index_intro_nav {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -742,10 +742,16 @@ footer h5 {
 
     }
 
-    .portfolio_info_content img {
+    #bank_section .portfolio_info_content,
+    #recipe_section .portfolio_info_content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /*  .portfolio_info_content img {
         display: none;
         position: absolute;
-    }
+    } */
 
 
     /* EXPERIENCE/CV */
