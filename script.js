@@ -21,6 +21,7 @@ let keyWord = ''
 
 document.addEventListener('keyup', function (event) {
     const music = document.getElementById('music');
+    const pop = document.getElementById('pop')
     const indexBody = document.getElementById('index_body')
     const userInput = event.key.toLowerCase();
     keyWord += event.key;
@@ -43,6 +44,7 @@ document.addEventListener('keyup', function (event) {
 
         introduction.textContent = "Hi! I'm Sean.";
         music.pause();
+        pop.play();
     }
 });
 

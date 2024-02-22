@@ -11,10 +11,13 @@ html {
     /* border: 1px solid red; */
 }
 
-#music {
+#music,
+#pop {
     display: none;
     position: absolute;
 }
+
+
 
 
 
