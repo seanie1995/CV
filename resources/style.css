@@ -423,6 +423,10 @@ label h2:hover {
 
 }
 
+#music_modal p {
+    width: 95%;
+}
+
 /* PORTFOLIO PROJECTS */
 /* MUSIC SECTION */
 
@@ -626,7 +630,66 @@ footer h5 {
     margin: 5px auto;
 }
 
+/* Contact Me */
 
+.about_me {
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* width: 90%; */
+    margin: 0 auto;
+    height: 100vh;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.about_me_text {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 50%;
+}
+
+
+
+.about_me_text p,
+.about_me_text h1,
+.about_me_text h2 {
+    padding-bottom: 1rem;
+}
+
+
+.me_live {
+    width: 40%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#shred {
+    all: unset;
+}
+
+#shred:hover {
+    cursor: pointer;
+}
+
+#shredCat {
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+}
+
+#rick_roll {
+    position: absolute;
+    display: none;
+
+}
 
 /* PHONE MODE */
 
@@ -756,10 +819,9 @@ footer h5 {
         flex-direction: column-reverse;
     }
 
-    /*  .portfolio_info_content img {
-        display: none;
-        position: absolute;
-    } */
+    .portfolio_info img {
+        width: 80%;
+    }
 
 
     /* EXPERIENCE/CV */
@@ -791,7 +853,29 @@ footer h5 {
     .edu_content ul {
         padding: 2.5rem;
     }
+
+    /* ABOUT ME */
+
+    .about_me {
+        flex-direction: column-reverse;
+        padding-top: rem;
+    }
+
+    .about_me_text {
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .me_live {
+        width: 80%;
+        padding-bottom: 1rem;
+    }
 }
+
+
 
 /* FONT */
 

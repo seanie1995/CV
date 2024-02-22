@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sean Schelin | About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resources/style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <h2><a class="logo-link" href="index.html">Sean Schelin</a></h2>
+        <input type="checkbox" id="nav_toggle">
+        <nav class="desktop_nav">
+            <ul>
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="experience.html">CV</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+        <div class="nav_links">
+            <a href="https://www.linkedin.com/feed/" target="_blank">Linked<i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/seanie1995" target="_blank">GitHub<i class="fa-brands fa-github"></i></a>
+        </div>
+        <button class="dark_mode_button"><img onclick="darkMode()" src="./resources/index/Nav/dark-mode.png"></button>
+        <div class="modal_menu">
+            <label for="nav_toggle">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+    </header>
+    <main>
+
+        <article class="about_me">
+
+            <div class="about_me_text">
+
+                <h1>Coding, Music and Self-expression</h1>
+                <p>
+                    Born and raised in Manila, Philippines, I ventured to Sweden at 18 years old in pursuit of a life
+                    beyond my
+                    comfort zone and got my Bachelor's Degree at Music and Audio Production at Dalarna University. As a
+                    <button id="shred">guitarist</button>, composer and sound engineer, I delved into audio production,
+                    working at
+                    various live events including
+                    conferences, livestreams, and concerts. I've also enjoyed performing onstage with several bands.
+                </p>
+                <p>
+                    In early 2023, I discovered my passion for programming, immersing myself in HTML, CSS, and C#. The
+                    excitement and
+                    satisfaction I found in coding prompted me to transition into a career in .NET Fullstack
+                    Development. Currently, I'm
+                    engrossed in studying at Chas Academy, relishing every moment of this new journey.
+                </p>
+
+            </div>
+            <img class="me_live" src="./resources/about/guitar-live.PNG">
+
+            <!--    <img class="soundguy" src="./resources/about/sound-guy.JPG"> -->
+        </article>
+        <div id="shredCat">
+            <img src="./resources/easter egg/guitar-cat.gif" id="guitar_cat">
+        </div>
+
+        <footer class="portfolio_footer">
+            <h3>Contact</h3>
+            <h5>soundofsean8@gmail.com</h5>
+            <h5>0707418173</h5>
+            <audio id="rick_roll" src="./resources/easter egg/RickRoll.mp3"></audio>
+        </footer>
+    </main>
+</body>
+
+</html>
