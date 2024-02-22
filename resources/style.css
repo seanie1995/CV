@@ -17,6 +17,7 @@ html {
 }
 
 
+
 /* dark-mode test */
 
 .dark_mode {
@@ -157,6 +158,7 @@ header {
     align-items: center;
     height: 55rem;
     flex-wrap: wrap;
+    animation: fadeIn 0.8s ease-in-out forwards;
 
 }
 
@@ -201,6 +203,7 @@ header {
     flex-wrap: wrap;
     /*  border: 1px solid red; */
     flex-direction: row;
+    animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 .index_intro_text {
@@ -264,6 +267,7 @@ header {
     align-items: center;
     /* flex-direction: column; */
     height: 55rem;
+    animation: fadeIn 0.8s ease-in-out forwards;
 
 }
 
@@ -425,6 +429,7 @@ label h2:hover {
 .portfolio_content {
     height: 100%;
     padding-top: 2.5%;
+    animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 .portfolio_info {
@@ -500,6 +505,7 @@ label h2:hover {
     display: flex;
     justify-content: center;
     padding-bottom: 2.5rem;
+    animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 .cv_content {
@@ -508,6 +514,7 @@ label h2:hover {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 10%;
+    animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 .cv_content h1,
@@ -556,6 +563,7 @@ label h2:hover {
     margin: 0 auto;
     padding-top: 9rem;
     padding-bottom: 5rem;
+    animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 
