@@ -680,9 +680,10 @@ footer h5 {
 #shredCat {
     position: fixed;
     top: 20%;
-    right: 10%;
+    right: 20%;
     transition: opacity 0.5s ease-out;
     opacity: 0;
+
 }
 
 #rick_roll {
@@ -690,6 +691,8 @@ footer h5 {
     display: none;
 
 }
+
+
 
 /* PHONE MODE */
 
