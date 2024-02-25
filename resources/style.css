@@ -17,7 +17,9 @@ html {
     position: absolute;
 }
 
-
+footer h5 {
+    text-decoration: none;
+}
 
 
 
