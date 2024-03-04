@@ -53,9 +53,19 @@ const shredCat = document.getElementById('shredCat');
 const rickRoll = document.getElementById('rick_roll')
 shredButton.addEventListener('click', () => {
 
-    const currentOpacity = parseFloat(shredCat.style.opacity);
 
 
+    if (shredCat.style.display === 'none' || shredCat.style.display === '') {
+        shredCat.style.display = 'block';
+        shredCat.style.opacity = '1';
+        rickRoll.play();
+    } else {
+        shredCat.style.display = 'none';
+        shredCat.style.opacity = '0';
+        rickRoll.pause();
+    }
+
+    /* const currentOpacity = parseFloat(shredCat.style.opacity);
 
     if (currentOpacity === 1) {
         shredCat.style.opacity = '0';
@@ -63,8 +73,8 @@ shredButton.addEventListener('click', () => {
     } else {
         shredCat.style.opacity = '1';
         rickRoll.play();
+    } */
 
-    }
 
 
 })
